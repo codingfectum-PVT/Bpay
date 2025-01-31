@@ -17,6 +17,7 @@ const MobileMainMenu = styled.div`
   justify-content: space-between;
   align-items: center;
   
+  
   @media (min-width: 900px) {
     display: none;
   }
@@ -27,10 +28,9 @@ const SiteLogo = styled.img`
 `;
 const MenuLink = styled(Link)`
   font-size: max(15px, 17px);
-  font-family: "poppins-light";
-  font-weight: bolder;
+
   color: ${ (props) => props.theme.textPrimary};
-  text-transform: uppercase;
+  
   text-decoration: none;
   padding: ${ (props) => props.p? props.p: '0 15px'};
   cursor: pointer;
@@ -47,17 +47,22 @@ const MenuLink = styled(Link)`
   }
   &:last-child {
     border-width: 0px;
-    background: red;
-    width: calc(100% - 40px);
+   
+    border-radius: 20px;
+   
     margin: 15px auto;
-    padding: 10px 20px;
+    padding: 10px 25px;
     text-align: center;
+    @media (max-width: 599px) {
+     width: 100%;
+     max-width: 200px;
+  }
   }
 `;
 
 const DrawerBox = styled(Box)`
   width: 250px;
-  background: ${(props) => props.theme.bgPrimary};
+  background: rgba(0, 0, 0, 0.9);
   min-height: calc( 100vh );
   text-align: center;
   padding-top: 20px;

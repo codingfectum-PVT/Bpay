@@ -3,7 +3,7 @@ import { Box, Button, Container, Link } from "@mui/material";
 import Switch from "@mui/material/Switch";
 
 const DesktopMainMenu = styled(Container)`
-  padding: 15px 0;
+  padding: 25px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -27,36 +27,30 @@ const SiteLogo = styled.img`
 `;
 const MenuLink = styled(Link)`
   font-size: max(15px, 17px);
-  font-family: "poppins-light";
-  font-weight: bolder;
-  color: ${ (props) => props.theme.textPrimary};
-  text-transform: uppercase;
+  color: #000000;
+  text-transform: none;
   text-decoration: none;
+  
+    text-wrap-mode: nowrap;
   padding: ${ (props) => props.p? props.p: '0 15px'};
   cursor: pointer;
   transition-duration: 0.5s;
 
   &:hover, &:active, &:focus {
-    color: #ffffff;
+    color: #F0B90B;
     transition-duration: 0.5s;
   }
   @media (max-width: 899px) {
     display: block;
     padding: ${ (props) => props.p? props.p: '15px 0 15px 20px'};
     text-align: left;
+    color: #fff;
   }
-  &:last-child {
-    border-width: 0px;
-    background: red;
-    width: calc(100% - 40px);
-    margin: 15px auto;
-    padding: 10px 20px;
-    text-align: center;
   }
 `;
 
 const DrawerBox = styled(Box)`
-  width: 250px;
+  width: 100%;
   background: ${(props) => props.theme.bgPrimary};
   min-height: calc( 100vh );
   text-align: center;
@@ -74,6 +68,7 @@ const MenuButton = styled(Button)`
   min-width: unset;
   padding-left: 6px;
   padding-right: 6px;
+    
 `;
 
 const Humburgger = styled.span`
@@ -111,8 +106,8 @@ const HumburggerClose = styled.span`
   align-items: center;
   justify-content: space-between;
   position: relative;
-
   &::after,&::before{
+
     content: 'menu';
     background: ${ (props)=> props.theme.textPrimary};
     display: block;

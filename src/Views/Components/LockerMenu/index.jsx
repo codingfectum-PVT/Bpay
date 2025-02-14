@@ -7,28 +7,65 @@ const LockerMenu = (props) => {
     const menuList = [ // You can pass 4 perameters for menu title, link, target and customClass
         {
         title: "Home",
-        link: "https://poodle.finance/",
+        link: "#Home",
         },
         {
-        title: "Locker",
-        link: "/locker",
+        title: "Features",
+        link: "#Features",
         },
         {
-        title: "View Chart",
-        link: "https://www.dextools.io/app/ether/pair-explorer/0xD017EA99F60535e5e0f87f997968ad59C6a61B06",
-        target: "_blank"
+        title: "Revenue share",
+        link: "#Revenueshare",
+        // target: "_blank"
         },
         {
-        title: "Buy Now",
-        link: "https://app.uniswap.org/#/swap?outputCurrency=0xf5d20bae62a50c2a0953e054e9544d7906114df9&chain=mainnet",
-        customClass: "",
-        target: "_blank"
+          title: "Roadmap",
+          link: "#Roadmap",
+          },
+          {
+            title: "FAQ",
+            link: "#FAQ",
+            },
+        {
+        title: "Get your card",
+        link: "#Getyourcard",
+        customClass: "GetCardDesktop",
+        // target: "_blank"
         },
+    ];
+    const MobilemenuList = [ // You can pass 4 perameters for menu title, link, target and customClass
+      {
+        title: "Get your card",
+        customClass: "GetCard",
+        // target: "_blank"
+        }, 
+      {
+        title: "Home",
+        link: "#Home",
+        },
+        {
+        title: "Features",
+        link: "#Features",
+        },
+        {
+        title: "Revenue share",
+        link: "#Revenueshare",
+        // target: "_blank"
+        },
+        {
+          title: "Roadmap",
+          link: "#Roadmap",
+          },
+          {
+            title: "FAQ",
+            link: "#FAQ",
+            },
+       
     ];
   return (
     <Container>
         <DesktopMenu menuList={menuList} />
-        <MobileMenu menuList={menuList} />
+        <MobileMenu menuList={menuList} MobilemenuList={MobilemenuList} />
     </Container>
   )
 }

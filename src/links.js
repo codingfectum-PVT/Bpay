@@ -1,9 +1,11 @@
 export const websiteLink = '#';
-export const tgLink = '#';
-export const xLink = '#';
+export const tgLink = 'https://t.me/TheBPay';
+export const xLink = 'https://x.com/thebpay';
+export const gitbook = '#'
+export const learnmore = '#';
 export const dexScreenerLink = '#';
 export const dexToolsLink = '#';
 export const uniSwapLink = '#';
-export const buySellTax = '0/0';
+export const buypay = '#';
 export const supply = 'TBA';
 export const CA = 'TBA';

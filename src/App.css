@@ -62,20 +62,75 @@ html{
   font-size: 18px;
 
 }
-.GetCardDesktop{
+.GetCardDesktop {
   border-width: 0px;
-  background: #F0B90B;
-  width: calc(100% - 40px);
+  background: #f0b90b;
+  width: 180px;
+  height: 45px;
   margin: 15px auto;
-  padding: 14px 25px;
+  padding: 12px 15px !important;
   text-transform: none;
   border-radius: 5px;
   text-align: center;
   font-size: 18px;
-  padding: 12px 15px !important;
+  position: relative;
+  overflow: hidden;
+  perspective: 1000px;
+  text-wrap-mode: nowrap;
+  color:black !important;
+}
+
+.GetCardDesktop span {
+  display: inline-block;
+  transition: transform 0.4s cubic-bezier(0.4, 0.2, 0.2, 1), opacity 0.4s ease-in-out;
+  transform-origin: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotateX(0deg);
+  opacity: 1;
+}
+
+.GetCardDesktop span.front {
+  transform: translate(-50%, -50%) rotateX(0deg);
+  opacity: 1;
+  color:black !important;
+}
+
+.GetCardDesktop span.back {
+  transform: translate(-50%, -50%) rotateX(90deg);
+  opacity: 0;
+  color:black !important;
+}
+
+.GetCardDesktop:hover span.front {
+  transform: translate(-50%, -50%) rotateX(-90deg);
+  opacity: 0;
+}
+
+.GetCardDesktop:hover span.back {
+  transform: translate(-50%, -50%) rotateX(0deg);
+  opacity: 1;
 }
 @media screen and (max-width:599px) {
   .GetCard {
     margin: 0px 15px !important;
   }
 }
+
+[data-aos="fade-up"] {
+  filter: blur(10px); 
+  opacity: 0; 
+  transition: filter 0.5s ease, opacity 0.5s ease;  
+}
+
+[data-aos="fade-up"].aos-animate {
+  filter: blur(0px); 
+  opacity: 1; 
+}
+
+[data-aos="fade-up"].aos-animate {
+  transition-delay: 0.4s; 
+}
+
+

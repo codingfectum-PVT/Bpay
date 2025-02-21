@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 import { Box, Button, Container, Link } from "@mui/material";
 import Switch from "@mui/material/Switch";
 
-const DesktopMainMenu = styled(Container)`
+const DesktopMainMenu = styled(Box)`
   padding: 25px 0;
   display: flex;
   justify-content: space-between;

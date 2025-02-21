@@ -114,13 +114,13 @@ const FAQ = () => {
       <Container maxWidth="lg">
         <Grid container spacing={3}>
           <Grid item xs={12} textAlign="center">
-            <Heading>Frequently asked questions</Heading>
-            <Discription>
+            <Heading data-aos="fade-up">Frequently asked questions</Heading>
+            <Discription data-aos="fade-up">
               Bpay is a revolutionary product, and like such, questions may arise.
             </Discription>
           </Grid>
         </Grid>
-        <FAQContainer>
+        <FAQContainer data-aos="fade-up">
           <FAQContent>
             {faqData.map((faq) => (
               <StyledAccordion key={faq.id}

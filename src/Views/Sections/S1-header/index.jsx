@@ -78,6 +78,7 @@ const Visa = styled('img')`
 const Title = styled(Typography)`
   color: #1E2329;
   font-size: 59px;
+  line-height:normal;
   font-weight: 600;
   margin-bottom: 30px;
   max-width: 476px;
@@ -116,12 +117,12 @@ const Header = () => {
               <span style={{ color: '#F0B90B' }}>Bpay</span> your anonymous card for limitless transactions.
             </Title>
             <Description variant="body1">
-              <span style={{ color: '#F0B90B' }}>Bpay</span> is an innovative platform designed to provide seamless and anonymous transactions with a secure, non-KYC virtual card—empowering users with financial freedom and limitless possibilities.
+              <span style={{ color: '#F0B90B', fontWeight:"600" }}>BPAY</span> is an innovative platform designed to provide seamless and anonymous transactions with a secure, non-KYC virtual card—empowering users with financial freedom and limitless possibilities.
             </Description>
             <Buttonbox display="flex">
               <Telegram href={tgLink}  target="_blank" rel="noopener noreferrer">Telegram</Telegram>
               <Gitbook href={gitbook} target="_blank" rel="noopener noreferrer" >Gitbook</Gitbook>
-              <Buy href={buypay} target="_blank" rel="noopener noreferrer" >Buy $Bpay</Buy>
+              <Buy href={buypay} target="_blank" rel="noopener noreferrer" >Buy $BPAY</Buy>
             </Buttonbox>
           </Grid>
           <Grid item xs={12} md={5.5}>

@@ -66,16 +66,16 @@ const Socialmedia = () => {
       <Container maxWidth='lg'>
         <Grid container>
           <Grid item xs={12} textAlign='center'>
-            <Heading>Follow Bpay on social media</Heading>
-            <Discription>Keep up with the latest announcements from Bpay, including $Bpay's future, exchange listings, product announcements etc.</Discription>
+            <Heading data-aos="fade-up">Follow Bpay on social media</Heading>
+            <Discription data-aos="fade-up">Keep up with the latest announcements from Bpay, including $BPAY's future, exchange listings, product announcements etc.</Discription>
           </Grid>
 
-          <Grid container spacing={3} justifyContent="center" marginTop={1}>
+          <Grid container spacing={3} justifyContent="center" marginTop={1} data-aos="fade-up">
             <Grid item xs={12} md={6}>
               <Bgbox >
                 <img src={tg} alt="Save time and conversion fees" style={{ width: '100%', maxWidth: '65px' }} />
                 <Typography variant="h6" fontWeight={600} marginTop={2} mb={2} sx={{color:'#1E2329',fontSize:'24px'}}>
-                Join our Telegram Channel
+                Join our Telegram Community
                 </Typography>
                 <Cardbutton href={tgLink}  target="_blank" rel="noopener noreferrer">Join us</Cardbutton>
               </Bgbox>

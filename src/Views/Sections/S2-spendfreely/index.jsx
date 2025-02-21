@@ -1,11 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styled from '@emotion/styled';
 import { Box, Container, Grid, Typography } from '@mui/material';
 import map from '../../../assets/map.svg';
 import card1 from '../../../assets/card1.svg'; 
 import card2 from '../../../assets/card2.svg'; 
 import tick from '../../../assets/tick.svg'; 
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const Wrapper = styled(Box)`
   padding: 220px 0px 80px;
   position:relative;
@@ -58,6 +59,8 @@ text-align: center;
 
 const Mainheading = styled(Typography)`
 font-size: 72px;
+
+    line-height: normal;
 @media (max-width: 720px) {
     font-size: 33px;
   }
@@ -82,26 +85,36 @@ const Mingrid = styled(Grid)`
 
 
 const Spendfreely = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,  
+      once: false,     
+      easing: 'ease-in-out',
+    });
+    AOS.refresh(); 
+  }, []);
+
   return (
     <Wrapper id='Features'>
       <Container maxWidth="lg">
         <Grid container>
           <Grid item xs={12} textAlign="center">
-            <ImageContainer>
+            <ImageContainer >
               <StyledImage src={map} alt="map" />
               <Mainheading
+              data-aos="fade-up"
                 style={{ color: '#1E2329',  fontWeight: '600', zIndex: 1, marginTop: '-90px' }}>
                 Spend freely without touching your real cash
               </Mainheading>
             </ImageContainer>
-            <Subheading style={{ color: '#1E2329', marginTop: '20px', fontSize: '18px', maxWidth: '620px', marginLeft: 'auto',
+            <Subheading data-aos="fade-up" style={{ color: '#1E2329', marginTop: '20px', fontSize: '18px', maxWidth: '620px', marginLeft: 'auto',
                 marginRight: 'auto' }}>
               <span style={{ color: '#F0B90B' }}>Bpay</span> lets you shop anywhere with ease, offering high approval rates for seamless transactions.
             </Subheading>
           </Grid>
 
-          <Grid container spacing={3} justifyContent="center" marginTop={1}>
-            <Grid item xs={12} md={6}>
+          <Grid container spacing={3} justifyContent="center" marginTop={1} data-aos="fade-up">
+            <Grid item xs={12} md={6} >
               <Bgbox >
                 <img src={card1} alt="Save time and conversion fees" style={{ width: '100%', maxWidth: '60px' }} />
                 <Typography variant="h6" fontWeight={600} marginTop={2} sx={{color:'#1E2329',fontSize:'24px'}}>
@@ -126,7 +139,7 @@ const Spendfreely = () => {
             </Grid>
           </Grid>
           
-          <Smart container>
+          <Smart container data-aos="fade-up">
             {['Instant card creation', 'Smart automation', 'Optimized user experience', 'API-powered system'].map((text, index) => (
               <Mingrid item key={index} xs={12} sm={12} md={6} lg={3} display='flex'>
                 <img src={tick} alt="tick" style={{ marginRight: '8px',width:'100%',maxWidth:'21px' }} />

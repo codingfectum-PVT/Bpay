@@ -90,14 +90,14 @@ const Revenueshare = () => {
     <Wrapper id='Revenueshare'>
         <Container maxWidth="lg">
             <Grid container >
-                <Main item container xs={12}>
+                <Main item container xs={12} data-aos="fade-up">
                   
-                        <Grid item xs={12} md={6} mb={5}>
+                        <Grid item xs={12} md={6} mb={5 } >
                             <Typography style={{color:'#F0B90B' ,fontSize:'24px',fontWeight:'600'}}>Revenue share</Typography>
                             <Heading fontWeight='600'>Earn for life</Heading>
-                            <Discription>By simply being a <span style={{color:'#F0B90B'}}>$Bpay</span> holder, you automatically qualify for a share of the revenue generated from every card sold, allowing you to passively earn as the platform grows.</Discription>
+                            <Discription>By simply being a <span style={{color:'#F0B90B'}}>$BPAY</span> holder, you automatically qualify for a share of the revenue generated from every card sold, allowing you to passively earn as the platform grows.</Discription>
                             <Boxwrapper display='flex'>
-                                <Buy href={buypay} target="_blank" rel="noopener noreferrer">Buy $Bpay </Buy>
+                                <Buy href={buypay} target="_blank" rel="noopener noreferrer">Buy $BPAY </Buy>
                                 <Learn href={learnmore} target="_blank" rel="noopener noreferrer">Learn more</Learn>
                             </Boxwrapper>
                         </Grid>

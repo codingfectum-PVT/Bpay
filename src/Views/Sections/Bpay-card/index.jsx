@@ -6,9 +6,9 @@ import secondBpay from "../../../assets/secondBpay.svg";
 import thirdBpay from "../../../assets/thirdBpay.svg";
 
 const tiers = [
-  { tier: "Tier 1", name: "Bpay Beagle", tokens: "1,000 $Bpay", balance: "$100", image: firstBpay },
-  { tier: "Tier 2", name: "Bpay Husky", tokens: "5,000 $Bpay", balance: "$500", image: secondBpay },
-  { tier: "Tier 3", name: "Bpay Malinois", tokens: "5,000 $Bpay", balance: "$500", image: thirdBpay },
+  { tier: "Tier 1", name: "Bpay Beagle", tokens: "1,000 $BPAY", balance: "$100", image: firstBpay },
+  { tier: "Tier 2", name: "Bpay Husky", tokens: "5,000 $BPAY", balance: "$500", image: secondBpay },
+  { tier: "Tier 3", name: "Bpay Malinois", tokens: "5,000 $BPAY", balance: "$500", image: thirdBpay },
 ];
 
 const Wrapper = styled(Box)`
@@ -98,15 +98,15 @@ const BpayCardTiers = () => {
     <Wrapper id="Getyourcard">
       <Container>
         <Box sx={{ margin: "auto", textAlign: "center", py: 4 }}>
-          <HighlightTypography>
+          <HighlightTypography data-aos="fade-up">
             <span style={{ color: "#F0B90B" }}>Bpay</span> card eligibility tiers
           </HighlightTypography>
-          <Discription align="center" color="textSecondary">
+          <Discription align="center" color="textSecondary" data-aos="fade-up">
             Bpay card tiers offer varying benefits and eligibility, based on your token holdings.
           </Discription>
-          <Grid container sx={{ backgroundColor: "#FFFFFF", borderRadius: "12px", p: 3 }}>
+          <Grid container sx={{ backgroundColor: "#FFFFFF", borderRadius: "12px", p: 3 }} data-aos="fade-up">
             {/* Header */}
-            <Grid container item sx={{ fontWeight: "bold", pb: 1,textAlign:'center' }}>
+            <Grid container item sx={{ fontWeight: "bold", pb: 1,textAlign:'center' }} >
               <Grid item xs={12} sm={3} textAlign="left">
                 <TypoTitle style={{paddingLeft:"52px"}}>Tier</TypoTitle>
               </Grid>

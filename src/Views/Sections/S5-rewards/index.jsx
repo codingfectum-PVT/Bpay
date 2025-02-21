@@ -87,16 +87,16 @@ const Rewards = () => {
     <Wrapper>
         <Container maxWidth='lg'>
             <Grid container>
-            <Main item container>
+            <Main item container data-aos="fade-up">
                 <Grid item xs={12} md={6}>
                     <img src={rewards} alt='rewards' style={{width:'100%',maxWidth:'420px',height:'auto',}} />
                 </Grid>
                   <Grid item xs={12} md={6} mb={5}>
                 <Typography style={{color:'#F0B90B' ,fontSize:'24px',fontWeight:'600'}}>Passive income</Typography>
                 <Heading fontWeight='600'>50% BUSD rewards</Heading>
-                <Discription><span style={{color:'#F0B90B'}}>$Bpay</span>holders earn 50% of the revenue from card sales and top-ups, rewarded in BUSD for a stable and seamless passive income.</Discription>
+                <Discription><span style={{color:'#F0B90B'}}>$BPAY</span> holders earn 50% of the revenue from card sales and top-ups, rewarded in BUSD for a stable and seamless passive income.</Discription>
                 <Boxwrapper display='flex'>
-                 <Buy href={buypay} target="_blank" rel="noopener noreferrer">Buy $Bpay </Buy>
+                 <Buy href={buypay} target="_blank" rel="noopener noreferrer">Buy $BPAY </Buy>
                   <Learn href={learnmore} target="_blank" rel="noopener noreferrer">Learn more</Learn>
                 </Boxwrapper>
             </Grid>

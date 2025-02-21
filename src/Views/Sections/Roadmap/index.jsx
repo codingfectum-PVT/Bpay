@@ -46,36 +46,36 @@ const Roadmap = () => {
     `
 
     return (
-        <Wrapper id="Roadmap">
+        <Wrapper >
         <Box sx={{ backgroundColor: "#0B0E11", py: 6, textAlign: "center" }}>
-            <Container>
-                <HighlightTypography>Roadmap</HighlightTypography>
+            <Container id="Roadmap">
+                <HighlightTypography data-aos="fade-up" >Roadmap</HighlightTypography>
                 
                 {/* Token Launch */}
-                <BoxWrap sx={{ my: 4 }}>
+                <BoxWrap sx={{ my: 4 }} data-aos="fade-up">
                     <SectionTitle>Token Launch</SectionTitle>
                     <SectionTitlePara>Bpay's official token release.</SectionTitlePara>
                     <Grid container spacing={3} justifyContent="center">
-                        <Grid item xs={12} sm={12} md={4}><Card><Typography sx={{fontWeight:'bold' ,margin:"10px 0"}}  variant="h6">1. Establishing website and socials</Typography><Typography>For ample community discoverability, $Bpay establishes its mediums of communication.</Typography></Card></Grid>
-                        <Grid item xs={12} sm={12} md={4}><Card><Typography sx={{fontWeight:'bold' ,margin:"10px 0"}}  variant="h6">2. PancakeSwap fair-launch</Typography><Typography>With 15 BNB LP (burned), $Bpay aims to reach the top trending charts within a few hours of release.</Typography></Card></Grid>
-                        <Grid item xs={12} sm={12} md={4}><Card><Typography sx={{fontWeight:'bold' ,margin:"10px 0"}}  variant="h6">3. Securing listings</Typography><Typography>With $Bpay deployed, the team will seek CoinMarketCap and CoinGecko for token listings.</Typography></Card></Grid>
+                        <Grid item xs={12} sm={12} md={4}><Card><Typography sx={{fontWeight:'bold' ,margin:"10px 0"}}  variant="h6">1. Establishing website and socials</Typography><Typography>For ample community discoverability, $BPAY establishes its mediums of communication.</Typography></Card></Grid>
+                        <Grid item xs={12} sm={12} md={4}><Card><Typography sx={{fontWeight:'bold' ,margin:"10px 0"}}  variant="h6">2. PancakeSwap fair-launch</Typography><Typography>With 15 BNB LP (burned), $BPAY aims to reach the top trending charts within a few hours of release.</Typography></Card></Grid>
+                        <Grid item xs={12} sm={12} md={4}><Card><Typography sx={{fontWeight:'bold' ,margin:"10px 0"}}  variant="h6">3. Securing listings</Typography><Typography>With $BPAY deployed, the team will seek CoinMarketCap and CoinGecko for token listings.</Typography></Card></Grid>
                     </Grid>
                 </BoxWrap>
 
                 {/* Product Release */}
-                <BoxWrap sx={{ my: 4 }}>
+                <BoxWrap sx={{ my: 4 }} data-aos="fade-up">
                     <SectionTitle>Product Release</SectionTitle>
                     
                     <SectionTitlePara>Bpay's official release.</SectionTitlePara>
                     <Grid container spacing={3} justifyContent="center">
-                        <Grid item xs={12} sm={12} md={4}><Card><Typography sx={{fontWeight:'bold' ,margin:"10px 0"}}  variant="h6">1. Order your Bpay card</Typography><Typography>For ample community discoverability, $Bpay establishes its mediums of communication.</Typography></Card></Grid>
-                        <Grid item xs={12} sm={12} md={4}><Card><Typography sx={{fontWeight:'bold' ,margin:"10px 0"}}  variant="h6">2. Top-up with BNB</Typography><Typography>Once Bpay Card is released, every user will be able to easily top-up their card with a BNB deposits. Eventually $Bpay deposits will also be supported.</Typography></Card></Grid>
+                        <Grid item xs={12} sm={12} md={4}><Card><Typography sx={{fontWeight:'bold' ,margin:"10px 0"}}  variant="h6">1. Order your Bpay card</Typography><Typography>For ample community discoverability, $BPAY establishes its mediums of communication.</Typography></Card></Grid>
+                        <Grid item xs={12} sm={12} md={4}><Card><Typography sx={{fontWeight:'bold' ,margin:"10px 0"}}  variant="h6">2. Top-up with BNB</Typography><Typography>Once Bpay Card is released, every user will be able to easily top-up their card with a BNB deposits. Eventually $BPAY deposits will also be supported.</Typography></Card></Grid>
                         <Grid item xs={12} sm={12} md={4}><Card><Typography sx={{fontWeight:'bold' ,margin:"10px 0"}}  variant="h6">3. Spend away!</Typography><Typography>With your Bpay Card in hand, you can start making purchases at your favorite merchants with ease.</Typography></Card></Grid>
                     </Grid>
                 </BoxWrap>
 
                 {/* Marketing Outreach */}
-                <BoxWrap sx={{ my: 4 }}>
+                <BoxWrap sx={{ my: 4 }} data-aos="fade-up">
                     <SectionTitle>Marketing Outreach</SectionTitle>
                     <SectionTitlePara>With a live product and token, Bpay Card drives strong marketing.</SectionTitlePara>
                     <Grid container spacing={3} justifyContent="center">

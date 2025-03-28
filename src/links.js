@@ -1,7 +1,7 @@
 export const websiteLink = '#';
 export const tgLink = 'https://t.me/TheBPay';
 export const xLink = 'https://x.com/thebpay';
-export const gitbook = '#'
+export const gitbook = 'https://thebpay.gitbook.io/https-thebpay.xyz'
 export const learnmore = '#';
 export const dexScreenerLink = '#';
 export const dexToolsLink = '#';

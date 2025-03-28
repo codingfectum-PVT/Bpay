@@ -27,14 +27,14 @@ const Footer = () => {
         <Container maxWidth='lg'>
             <Grid container spacing={4} justifyContent='space-between'>
                 <Grid item xs={12} md={4}>
-                    <img src={logo} alt='logo' style={{width:'100%',maxWidth:'140px',height:'auto'}}/>
+                    <img src={logo} alt='logo' style={{width:'100%',maxWidth:'140px',height:'auto'}}  draggable="false"/>
                     <Typography style={{color:'#1E2329',fontSize:'18px',marginTop:'20px',textTransform:'none',marginBottom:'20px'}}>your anonymous card for limitless transactions.</Typography>
                     <Socail >
                          <a href={tgLink} target="_blank" rel="noopener noreferrer">
-                        <img src={footertg} alt='footer' style={{width:'100%',maxWidth:'50px',height:'auto',marginRight:'10px'}} />
+                        <img src={footertg} alt='footer' style={{width:'100%',maxWidth:'50px',height:'auto',marginRight:'10px'}}  draggable="false" />
                         </a>
                         <a href={xLink} target="_blank" rel="noopener noreferrer">
-                        <img src={footerx} alt='footer' style={{width:'100%',maxWidth:'50px',height:'auto'}}/>
+                        <img src={footerx} alt='footer' style={{width:'100%',maxWidth:'50px',height:'auto'}}  draggable="false"/>
                         </a>
                     </Socail>
                 </Grid>

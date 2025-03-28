@@ -43,11 +43,11 @@ const Serviceprovider = () => {
                 <Grid item xs={12} justifyContent='center' textAlign='center'>
                     <Heading data-aos="fade-up">Payment service provider</Heading>
                     <Discription data-aos="fade-up">Integrate service demands and expand channels, incorporating cryptocurrency as a new payment method, ensuring smooth and unrestricted fund transfers.</Discription>
-                    <Box display='flex' alignContent='center' justifyContent='center' mt={3}data-aos="fade-up" >
-                        <img src={gpay} alt='gpay' style={{width:'100%',maxWidth:'68px',height:'auto',marginRight:'10px'}}/>
-                        <img src={wallet} alt='gpay' style={{width:'100%',maxWidth:'68px',height:'auto',marginRight:'10px'}}/>
-                        <img src={visa} alt='gpay' style={{width:'100%',maxWidth:'68px',height:'auto',marginRight:'10px'}}/>
-                        <img src={master} alt='gpay' style={{width:'100%',maxWidth:'68px',height:'auto',marginRight:'10px'}}/>
+                    <Box display='flex' alignContent='center' justifyContent='center' mt={3}data-aos="fade-up" gap={1} >
+                        <img src={gpay} alt='gpay' style={{width:'100%',maxWidth:'68px',height:'auto',}}  draggable="false" />
+                        <img src={wallet} alt='gpay' style={{width:'100%',maxWidth:'68px',height:'auto',}}  draggable="false" />
+                        <img src={visa} alt='gpay' style={{width:'100%',maxWidth:'68px',height:'auto',}}  draggable="false" />
+                        <img src={master} alt='gpay' style={{width:'100%',maxWidth:'68px',height:'auto',}}  draggable="false" />
                     </Box>
                 </Grid>
             </Grid>

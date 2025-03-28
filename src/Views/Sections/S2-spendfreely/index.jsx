@@ -10,6 +10,7 @@ import 'aos/dist/aos.css';
 const Wrapper = styled(Box)`
   padding: 220px 0px 80px;
   position:relative;
+  top: 60px;
 `;
 
 const ImageContainer = styled(Box)`
@@ -81,7 +82,14 @@ const Mingrid = styled(Grid)`
 
 `;
 
-    
+const BlurOverlay = styled(Box)`
+position: absolute;
+bottom: 0;
+width: 100%;
+height: 7vh;
+background: linear-gradient(to bottom, rgba(245, 245, 245, 0) 15%, rgba(245, 245, 245, 0.9) 72%);
+z-index: 1;
+`;
 
 
 const Spendfreely = () => {
@@ -95,16 +103,17 @@ const Spendfreely = () => {
   }, []);
 
   return (
+    
     <Wrapper id='Features'>
       <Container maxWidth="lg">
         <Grid container>
           <Grid item xs={12} textAlign="center">
             <ImageContainer >
-              <StyledImage src={map} alt="map" />
+              <StyledImage src={map} alt="map"  draggable="false" />
               <Mainheading
               data-aos="fade-up"
                 style={{ color: '#1E2329',  fontWeight: '600', zIndex: 1, marginTop: '-90px' }}>
-                Spend freely without touching your real cash
+              Spend your crypto freely with full privacy and no identity checks
               </Mainheading>
             </ImageContainer>
             <Subheading data-aos="fade-up" style={{ color: '#1E2329', marginTop: '20px', fontSize: '18px', maxWidth: '620px', marginLeft: 'auto',
@@ -116,7 +125,7 @@ const Spendfreely = () => {
           <Grid container spacing={3} justifyContent="center" marginTop={1} data-aos="fade-up">
             <Grid item xs={12} md={6} >
               <Bgbox >
-                <img src={card1} alt="Save time and conversion fees" style={{ width: '100%', maxWidth: '60px' }} />
+                <img src={card1} alt="Save time and conversion fees" style={{ width: '100%', maxWidth: '60px' }}  draggable="false" />
                 <Typography variant="h6" fontWeight={600} marginTop={2} sx={{color:'#1E2329',fontSize:'24px'}}>
                   Save time and conversion fees
                 </Typography>
@@ -128,7 +137,7 @@ const Spendfreely = () => {
 
             <Grid item xs={12} md={6} >
               <Bgbox  >
-                <img src={card2} alt="Accepted everywhere" style={{ width: '100%', maxWidth: '60px' }} />
+                <img src={card2} alt="Accepted everywhere" style={{ width: '100%', maxWidth: '60px' }}   draggable="false"/>
                 <Typography variant="h6" fontWeight={600} marginTop={2} sx={{color:'#1E2329',fontSize:'24px'}}> 
                   Accepted everywhere
                 </Typography>
@@ -142,7 +151,7 @@ const Spendfreely = () => {
           <Smart container data-aos="fade-up">
             {['Instant card creation', 'Smart automation', 'Optimized user experience', 'API-powered system'].map((text, index) => (
               <Mingrid item key={index} xs={12} sm={12} md={6} lg={3} display='flex'>
-                <img src={tick} alt="tick" style={{ marginRight: '8px',width:'100%',maxWidth:'21px' }} />
+                <img src={tick} alt="tick" style={{ marginRight: '8px',width:'100%',maxWidth:'21px' }}  draggable="false" />
                 <Typography variant="body1" fontWeight={600} color='#1E2329' fontSize='18px'>{text}</Typography>
               </Mingrid>
             ))}

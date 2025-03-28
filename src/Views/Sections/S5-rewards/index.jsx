@@ -86,10 +86,10 @@ const Rewards = () => {
   return (
     <Wrapper>
         <Container maxWidth='lg'>
-            <Grid container>
-            <Main item container data-aos="fade-up">
-                <Grid item xs={12} md={6}>
-                    <img src={rewards} alt='rewards' style={{width:'100%',maxWidth:'420px',height:'auto',}} />
+            <Grid container data-aos="fade-up" >
+            <Main item container  >
+                <Grid item xs={12} md={6} >
+                    <img src={rewards} alt='rewards' style={{width:'100%',maxWidth:'420px',height:'auto',}} draggable="false"  />
                 </Grid>
                   <Grid item xs={12} md={6} mb={5}>
                 <Typography style={{color:'#F0B90B' ,fontSize:'24px',fontWeight:'600'}}>Passive income</Typography>

@@ -4,6 +4,7 @@ import List from "@mui/material/List";
 import Divider from "@mui/material/Divider";
 import { useDispatch, useSelector } from "react-redux";
 import logo from "../../../../assets/logo.svg";
+import bpaywhite from '../../../../assets/bpaywhite.svg';
 import logoicon from "../../../../assets/logoicon.svg";
 import { MenuLink, MobileMainMenu, SiteLogo, DrawerBox, DrawerDivider, Humburgger, HumburggerClose, MenuButton } from "../styles";
 import { Box, styled } from "@mui/material";
@@ -49,7 +50,7 @@ const MobileMenu = (props) => {
   return (
     <MobileMainMenu>
       <MenuLink href="/" p="15px 0 15px">
-        <SiteLogo src={logo} width="150" height="50" />
+        <SiteLogo src={bpaywhite} width="150" height="50" />
       </MenuLink>
 
       {!state["left"] && (

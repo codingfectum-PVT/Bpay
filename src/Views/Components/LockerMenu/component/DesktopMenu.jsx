@@ -1,12 +1,13 @@
 import React from "react";
 import logo from "../../../../assets/logo.svg";
 import { DesktopMainMenu, MenuLink } from "../styles";
+import bpaywhite from '../../../../assets/bpaywhite.svg'
 
 const DesktopMenu = (props) => {
   return (
-    <DesktopMainMenu maxWidth="xl">
+    <DesktopMainMenu >
       <MenuLink href="/" p="0px">
-        <img src={logo} width="130" height="50" alt="Logo" />
+        <img src={bpaywhite} width="130" height="50" alt="Logo"  draggable="false" />
       </MenuLink>
       <div style={{ display: "flex", alignItems: "center" }}>
         {props.menuList.map((value, i) =>

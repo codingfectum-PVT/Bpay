@@ -8,6 +8,7 @@ const DesktopMainMenu = styled(Box)`
   justify-content: space-between;
   align-items: center;
 
+  
   @media (max-width: 899px) {
     display: none;
   }
@@ -27,7 +28,7 @@ const SiteLogo = styled.img`
 `;
 const MenuLink = styled(Link)`
   font-size: max(15px, 17px);
-  color: #000000;
+  color: #ffffff;
   text-transform: none;
   text-decoration: none;
   

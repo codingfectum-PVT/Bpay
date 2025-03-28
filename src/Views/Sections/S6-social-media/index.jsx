@@ -73,7 +73,7 @@ const Socialmedia = () => {
           <Grid container spacing={3} justifyContent="center" marginTop={1} data-aos="fade-up">
             <Grid item xs={12} md={6}>
               <Bgbox >
-                <img src={tg} alt="Save time and conversion fees" style={{ width: '100%', maxWidth: '65px' }} />
+                <img src={tg} alt="Save time and conversion fees" style={{ width: '100%', maxWidth: '65px' }} draggable="false" />
                 <Typography variant="h6" fontWeight={600} marginTop={2} mb={2} sx={{color:'#1E2329',fontSize:'24px'}}>
                 Join our Telegram Community
                 </Typography>
@@ -83,7 +83,7 @@ const Socialmedia = () => {
 
             <Grid item xs={12} md={6} >
               <Bgbox  >
-                <img src={x} alt="Accepted everywhere" style={{ width: '100%', maxWidth: '65px' }} />
+                <img src={x} alt="Accepted everywhere" style={{ width: '100%', maxWidth: '65px' }}  draggable="false" />
                 <Typography variant="h6" fontWeight={600} marginTop={2} mb={2} sx={{color:'#1E2329',fontSize:'24px'}}> 
                 X (formerly Twitter)
                 </Typography>

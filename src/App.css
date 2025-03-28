@@ -7,6 +7,31 @@
   pointer-events: none;
 }
 
+::-webkit-scrollbar {
+  width: 6px; 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #F0B90B;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #F0B90B;
+}
+::-webkit-scrollbar-thumb:hover {
+  cursor: grab;
+}
+
+::-webkit-scrollbar:hover {
+  width: 10px; 
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -50,6 +75,8 @@
 html{
   scroll-behavior: smooth;
 }
+
+
 .GetCard {
   border-width: 0px;
   background: #F0B90B;
@@ -121,7 +148,7 @@ html{
 [data-aos="fade-up"] {
   filter: blur(10px); 
   opacity: 0; 
-  transition: filter 0.5s ease, opacity 0.5s ease;  
+  transition: filter 0.4s ease, opacity 0.4s ease;  
 }
 
 [data-aos="fade-up"].aos-animate {
@@ -130,7 +157,7 @@ html{
 }
 
 [data-aos="fade-up"].aos-animate {
-  transition-delay: 0.4s; 
+  transition-delay: 0.3s; 
 }
 
 

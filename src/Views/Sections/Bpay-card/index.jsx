@@ -126,7 +126,7 @@ const BpayCardTiers = () => {
               <GridCustom container item alignItems="center" key={index}>
                 <Grid item xs={12} sm={3} textAlign="left">
                   <Icontier style={{ display: "flex", flexDirection: "row", alignItems: "center", color: "#000" }}>
-                    <CardImage src={tier.image} />
+                    <CardImage src={tier.image}  draggable="false" />
                     <span style={{ color: "#000", fontSize: "20px", marginRight: "8px" }}>{tier.tier}</span>
                   </Icontier>
                 </Grid>

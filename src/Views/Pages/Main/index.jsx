@@ -1,7 +1,7 @@
 import React from 'react'
 import LockerMenu from '../../Components/LockerMenu'
 import { PageWrapper } from '../../Styles/style'
-import TBA from '../../Sections/TBA'
+
 import Header from '../../Sections/S1-header'
 import Spendfreely from '../../Sections/S2-spendfreely'
 import Serviceprovider from '../../Sections/S3-service-provider'
@@ -12,6 +12,7 @@ import FAQ from '../../Sections/S7-faq/indesx'
 import Footer from '../../Sections/S8-footer'
 import Roadmap from '../../Sections/Roadmap'
 import BpayCardTiers from '../../Sections/Bpay-card'
+import TBA from '../../Sections/TBA'
 const MainPage = (props) => {
   return (
     <PageWrapper>

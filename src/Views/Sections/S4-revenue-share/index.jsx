@@ -74,7 +74,6 @@ font-size: 18px;
 `
 const Heading = styled(Typography)`
    color:#1E2329;
-   
    font-size: 63px;
    margin-bottom: 10px;
    @media (max-width: 900px) {
@@ -89,10 +88,10 @@ const Revenueshare = () => {
   return (
     <Wrapper id='Revenueshare'>
         <Container maxWidth="lg">
-            <Grid container >
-                <Main item container xs={12} data-aos="fade-up">
+            <Grid container data-aos="fade-up"  >
+                <Main item container xs={12}>
                   
-                        <Grid item xs={12} md={6} mb={5 } >
+                        <Grid item xs={12} md={6} mb={5}>
                             <Typography style={{color:'#F0B90B' ,fontSize:'24px',fontWeight:'600'}}>Revenue share</Typography>
                             <Heading fontWeight='600'>Earn for life</Heading>
                             <Discription>By simply being a <span style={{color:'#F0B90B'}}>$BPAY</span> holder, you automatically qualify for a share of the revenue generated from every card sold, allowing you to passively earn as the platform grows.</Discription>
@@ -103,7 +102,7 @@ const Revenueshare = () => {
                         </Grid>
 
                         <Grid item xs={12} md={6}>
-                            <img src={cardshare} alt="Card share" style={{width:'100%',maxWidth:'550px',height:'auto',}} />
+                            <img src={cardshare} alt="Card share" style={{width:'100%',maxWidth:'550px',height:'auto',}} draggable="false"  />
                         </Grid>
                 </Main>
             </Grid>

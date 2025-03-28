@@ -3,6 +3,7 @@ import React from 'react'
 import DesktopMenu from './component/DesktopMenu';
 import MobileMenu from './component/MobileMenu';
 
+
 const LockerMenu = (props) => {
     const menuList = [ // You can pass 4 perameters for menu title, link, target and customClass
         {
@@ -19,8 +20,8 @@ const LockerMenu = (props) => {
         // target: "_blank"
         },
         {
-          title: "Roadmap",
-          link: "#Roadmap",
+          title: "Tokenomics",
+          link: "#Tokenomics",
           },
           {
             title: "FAQ",
@@ -53,8 +54,8 @@ const LockerMenu = (props) => {
         // target: "_blank"
         },
         {
-          title: "Roadmap",
-          link: "#Roadmap",
+          title: "Tokenomics",
+          link: "#Tokenomics",
           },
           {
             title: "FAQ",
@@ -63,10 +64,13 @@ const LockerMenu = (props) => {
        
     ];
   return (
-    <Container>
-        <DesktopMenu menuList={menuList} />
+    <div style={{background:'#0C1013'}}>
+      
+    <Container >
+    <DesktopMenu menuList={menuList} />
         <MobileMenu menuList={menuList} MobilemenuList={MobilemenuList} />
     </Container>
+    </div>
   )
 }
 
